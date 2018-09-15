@@ -2,7 +2,8 @@ body {
 	background-color: black;
 }
 #header {
-	background-color: orange;
+	background-color: #BF0C2B;
+    padding: 20px;
 }
 #header div {
 	display: inline;
@@ -14,5 +15,5 @@ body {
 	color: white;
     font-size: 30px;
     margin: 20px;
-    font-family:'Kosugi Maru', sans-serif;
+    font-family: 'Kosugi Maru', sans-serif;
 }
