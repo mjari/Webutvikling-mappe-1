@@ -12,4 +12,7 @@ body {
 #header a {
 	text-decoration: none;
 	color: white;
+    font-size: 30px;
+    margin: 20px;
+    font-family:'Kosugi Maru', sans-serif;
 }
