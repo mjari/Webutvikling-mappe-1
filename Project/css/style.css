@@ -82,6 +82,11 @@ body {
 		width: 100%;
 	}
 }
+@media only screen and (min-height: 1200px) {
+	#banner img {
+		height: 100%;
+	}
+}
 #banner p {
 	position: absolute;
 	top: 50%;
