@@ -9,10 +9,16 @@ body {
 #header {
 	position: fixed;
 	background-color: #BF0C2B;
-    padding: 20px;
 	width: 100%;
 	box-sizing: border-box;
 	z-index: 1;
+}
+#name {
+	text-decoration: none;
+	color: white;
+    font-size: 30px;
+	float: left;
+	margin: 0 0px;
 }
 #hamburger-button {
 	float: right;
@@ -27,27 +33,68 @@ body {
 #hamburger-middle {
 	margin: 6px 0;
 }
-#menu {
+#x-button {
+	position: relative;
+	float: right;
+	padding: 3px;
+	height: 22px;
+	top: 1px;
+	display: none;
+}
+#line-1 {
+	transform: rotate(-45deg) translate(-5px, 7px);
+}
+#line-2 {
+	transform: rotate(45deg) translate(5px, 2px);
+}
+#x-button div {
+	width: 30px;
+	height: 4px;
+	background-color: white;
+	border-radius: 5px;
+}
+#header-menu {
 	display: none;
 	float: right;
+}
+#hamburger-button:target {
+	display: none;
+}
+#hamburger-button:target + #x-button{
+	display: block;
+}
+#hamburger-button:target ~ #header-menu {
+	display: block;
+	float: none;
+	clear: left;
+}
+#hamburger-button:target ~ #header-menu > .header-button {
+	float: none;
+	display: block;
+	background-color: #111111;
+	border-bottom: solid 1px #444444;
+	text-align: center;
 }
 @media only screen and (min-width: 850px) {
 	#hamburger-button {
 		display: none;
 	}
-	#menu {
+	#header-menu {
 		display: block;
 	}
+	.header-button:hover:before {
+		visibility: visible;
+		transform: scaleX(1);
+		-webkit-transform: scaleX(1);
+	}
 }
-#header a {
+.header-button {
+	position: relative;
 	text-decoration: none;
 	color: white;
     font-size: 30px;
 	float: left;
-	margin: 0 20px;
-}
-.header-button {
-	position: relative;
+	margin: 0 0px;
 }
 .header-button:before {
 	content: "";
@@ -62,11 +109,6 @@ body {
 	-webkit-transform: scaleX(0);
 	transition: 0.3s ease-in-out;
 	-webkit-transition: 0.3s ease-in-out;
-}
-.header-button:hover:before {
-	visibility: visible;
-	transform: scaleX(1);
-	-webkit-transform: scaleX(1);
 }
 #banner {
 	position: relative;
