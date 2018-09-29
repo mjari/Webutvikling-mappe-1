@@ -153,15 +153,36 @@ body {
 	text-shadow: 2px 2px 2px black;
 	color: #eeeeee;
 }
+#banner p{
+    position: absolute;
+	top: 60%;
+	width: 100%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	text-align: center;
+    font-family: 'Passion One', cursive;
+	font-size: 30px;
+	text-shadow: 2px 2px 2px black;
+	color: #eeeeee; 
+}
+
 @media only screen and (min-width: 535px) {
 	#banner h1 {
 		font-size: 60px;
+        
 	}
+    #banner p{
+        font-size: 40px;
+    }
+    
 }
 @media only screen and (min-width: 1000px) {
 	#banner h1 {
 		font-size: 80px;
 	}
+    #banner p{
+        font-size: 50px;
+    }
 }
 #footer {
 	background-color: #BF0C2B;
