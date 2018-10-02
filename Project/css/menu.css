@@ -1,0 +1,38 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #111111;
+    color:white;
+	font-family: 'Kosugi Maru', sans-serif;
+}
+#menu {
+    
+}
+#title {
+	position: relative;
+	display: inline-block;
+	font-size: 45px;
+	border-bottom: solid 2px white;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 50px;
+}
+.grid-container{
+    display: grid;
+	grid-gap: 60px 150px;
+    grid-template-columns: auto auto;
+    background-color: yellow;
+}
+.grid-item{
+	background-color: blue;
+	margin: 30px;
+}
+.grid-item h2{
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+#content {
+	position: relative;
+	top: 200px;
+}
