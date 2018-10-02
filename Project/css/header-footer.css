@@ -104,11 +104,10 @@
 		display: none;
 	}
 	#header-menu {
-		margin-right: 20px;
 		display: block;
 	}
 	.header-button {
-		margin-left: 30px;
+		padding: 0 15px;
 	}
 	.header-button:hover:before {
 		visibility: visible;
