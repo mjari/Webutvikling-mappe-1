@@ -4,33 +4,59 @@ html {
 body {
 	background-color: #111111;
     color:white;
-	font-family: 'Kosugi Maru', sans-serif;
+	font-family: sans-serif;
 }
 #content {
 	position: relative;
 	top: 200px;
 }
-#menu {
-    
+.menu {
+	margin-bottom: 170px;
 }
-#title {
+.title {
 	position: relative;
 	display: inline-block;
 	font-size: 45px;
-	border-bottom: solid 2px white;
 	left: 50%;
 	transform: translateX(-50%);
-	margin-bottom: 50px;
+	margin-bottom: 90px;
+	font-weight: 700;
+}
+.title:before {
+	position: absolute;
+	content: "";
+	width: 50%;
+	left: 50%;
+	bottom: -10px;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	border-bottom: solid 2px #F5900E;
 }
 .grid-container{
     display: grid;
-    grid-template-columns: auto auto;
-    background-color: yellow;
+    grid-template-columns: repeat(1, 1fr);
+	grid-gap: 100px;
+	width: 80%;
+	margin: auto;
 }
-.grid-item{
-	background-color: blue;
+.grid-item div {
+	width: 80%;
+	float: left;
+	font-size: 20px;
 }
 .grid-item h2{
 	font-weight: 900;
 	margin-bottom: 10px;
+}
+.price {
+	position: relative;
+	float: left;
+	border-bottom: solid 2px #F5900E;
+	font-weight: 700;
+}
+@media only screen and (min-width: 950px) {
+	.grid-container{
+		grid-template-columns: repeat(2, 1fr);
+		width: 60%;
+	}
 }
