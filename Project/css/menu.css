@@ -11,7 +11,14 @@ body {
 	top: 200px;
 }
 .menu {
+	border-bottom: solid 2px #BF0C2B;
+	margin-bottom: 85px;
+	padding-bottom: 85px;
+}
+#end {
+	border-bottom: none;
 	margin-bottom: 170px;
+	padding-bottom: 0;
 }
 .title {
 	position: relative;
