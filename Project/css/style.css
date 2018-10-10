@@ -111,6 +111,26 @@ body {
 	padding-top: 170px;
 	padding-bottom: 170px;
 }
+.title {
+	position: relative;
+	display: inline-block;
+	font-size: 45px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	margin-bottom: 90px;
+	font-weight: 700;
+}
+.title:before {
+	position: absolute;
+	content: "";
+	width: 50%;
+	left: 50%;
+	bottom: -10px;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	border-bottom: solid 2px #F5900E;
+}
 #veg {
 	position: relative;
 	width: 60%;
@@ -157,25 +177,39 @@ body {
 #veg a:hover {
 	background-color: #BF0C2B00;
 }
-.title {
-	position: relative;
-	display: inline-block;
-	font-size: 45px;
-	left: 50%;
-	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	margin-bottom: 90px;
-	font-weight: 700;
+#bestsellers {
+	padding-top: 170px;
+	padding-bottom: 170px;
 }
-.title:before {
-	position: absolute;
-	content: "";
-	width: 50%;
-	left: 50%;
-	bottom: -10px;
-	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	border-bottom: solid 2px #F5900E;
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+	grid-gap: 60px;
+	width: 60%;
+	margin: auto;
+}
+@media only screen and (min-width: 950px) {
+	.grid-container{
+		grid-template-columns: repeat(2, 1fr);
+		width: 30%;
+	}
+}
+.grid-item {
+	font-size: 25px;
+	padding: 20px;
+}
+.grid-container a {
+	text-align: center;
+	background-color: #BF0C2B;
+	color: white;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px black;
+	border: solid 6px #BF0C2B;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+.grid-container a:hover {
+	background-color: #BF0C2B00;
 }
 #order {
 	position: relative;

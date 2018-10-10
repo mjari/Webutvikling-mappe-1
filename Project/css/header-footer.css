@@ -4,6 +4,7 @@
 	background-color: #BF0C2B;
 	width: 100%;
 	padding-top: 20px;
+	border-bottom: solid 3px #111111;
 	box-sizing: border-box;
 	z-index: 1;
 }
