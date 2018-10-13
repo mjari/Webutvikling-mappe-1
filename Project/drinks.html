@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb-NO">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +10,53 @@
 		<title>Tasty&amp;Fancy - Drikke-meny</title>
 	</head>
 	<body>
-		<div id="header">
+		
+		<!-- The header section -->
+		<header>
+			
+			<!-- Clickable title that takes the user to the top of the page -->
             <a id="name" href="index.html">Tasty&amp;Fancy</a>
-			<a id="hamburger-button"href="#hamburger-button">
+			
+			<!-- The hamburger-button is only visible when the viewport's width is less than 850px -->
+			<a id="hamburger-button" href="#hamburger-button">
                 <div id="hamburger-top"></div>
                 <div id="hamburger-middle"></div>
                 <div id="hamburger-bottom"></div>
 			</a>
-            <a id="x-button"href="#">
+			
+			<!-- Only visible after clicking the hamburger-button -->
+            <a id="x-button"href="">
 				<div id="line-1"></div>
 				<div id="line-2"></div>
 			</a>
-            <div id="header-menu">
+			
+			<!-- The navigation-menu of the header -->
+            <nav id="header-menu">
 				<a class="header-button" href="index.html#news">Nyheter</a>
 				<a class="header-button" href="index.html#contact">Kontakt oss</a>
-			</div>
-		</div>
-		<div id="content">
-       		<div id="menus">
+			</nav>
+		</header>
+		
+		<!-- Page content starts here -->
+		
+		<main id="content">
+			
+			<!-- Navigation menu to menu-pages -->
+       		<nav id="menus">
 				<a href="pizza.html">Pizza</a>
 				<a href="hamburger.html">Hamburger</a>
 				<a href="dessert.html">Dessert</a>
 				<a href="drinks.html">Drikke</a>
-			</div>
-        	<div class="menu">
+			</nav>
+			
+			<!-- Temporary offer -->
+			<section id="offer">
+				<img src="pictures/iste.png" alt="Tine Iste">
+				<p>Gratis Tine Iste ved kjøp av pizza!<br>Kun denne uken!<p>
+			</section>
+			
+			<!-- Menu displayed in grid -->
+        	<section class="menu">
            		<h1 class="title">Drikke</h1>
             	<div class ="grid-container">
 					<div class ="grid-item">
@@ -59,7 +82,7 @@
                		</div>
                		<div class ="grid-item">
 						<div>
-							<h2>Coca-cola zero, pepsi, fanta, sprite</h2>
+							<h2>Coca-Cola Zero, Pepsi Max, Fanta, Sprite</h2>
 							<p>0,33l</p>
 						</div>
               			<p class="price">kr 39</p>
@@ -67,7 +90,7 @@
                		<div class ="grid-item">
 						<div>
 							<h2>Tine iste</h2>
-							<p>Fersken eller lime</p>
+							<p>Fersken, guava, lime</p>
 						</div>
               			<p class="price">kr 28</p>
                		</div>
@@ -79,8 +102,10 @@
               			<p class="price">kr 39</p>
                		</div>
             	</div>
-        	</div>
-        	<div class="menu" id="end">
+        	</section>
+			
+			<!-- Menu displayed in grid. Does not show line at the bottom -->
+        	<section class="menu" id="end">
            		<h1 class="title">Øl</h1>
             	<div class ="grid-container">
 					<div class ="grid-item">
@@ -112,12 +137,16 @@
               			<p class="price">kr 95</p>
                		</div>
             	</div>
-        	</div>
-			<div id="footer">
+        	</section>
+			
+			<!-- Page content ends here -->
+			
+			<!-- The footer with contact-info -->
+			<section id="footer">
 				<p>Telefon: 66 77 88 99</p>
 				<p>E-post: kontakt@tastyfancy.no</p>
 				<p>Adresse: Veien 13, 0554 Oslo</p>
-			</div>
-		</div>
+			</section>
+		</main>
 	</body>
 </html>
